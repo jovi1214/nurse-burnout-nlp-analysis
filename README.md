@@ -8,6 +8,12 @@ This project explores how natural language processing (NLP) can be applied to on
 
 Developed as part of graduate coursework at the University of Colorado Boulder, the project combines computational analysis with qualitative interpretation to investigate how healthcare workers describe workplace stress and burnout.
 
+### Project Notebook
+
+[View Python NLP Analysis Notebook](nurse_burnout_nlp_analysis.ipynb)
+
+The notebook contains the Python implementation, data preprocessing, sentiment analysis, LDA topic modeling, and analytical outputs.
+
 ## Research Objectives
 
 - Analyze sentiment in nurse burnout discussions.
@@ -41,6 +47,39 @@ These sources serve different analytical purposes and should not be treated as i
 - **NLTK / VADER:** Sentiment analysis
 - **Scikit-learn:** Latent Dirichlet Allocation (LDA) topic modeling
 - **Jupyter Notebook / Google Colab:** Development, execution, and documentation
+
+## Repository Structure
+
+```text
+nurse-burnout-nlp-analysis/
+├── README.md
+├── nurse_burnout_nlp_analysis.ipynb
+├── data/
+│   ├── README.md
+│   ├── Kaggle Nurse Burnout.xlsx
+│   ├── Reddit Nurse Burnout.csv
+│   └── Statista Nurse Burnout.xlsx
+└── docs/
+    ├── Research proposal (PDF)
+    └── Final presentation (PPTX)
+```
+
+The `data/` directory contains the datasets used in the analysis, while `docs/` contains supporting research materials.
+
+## How to Run
+
+1. Download or clone this repository.
+2. Open `nurse_burnout_nlp_analysis.ipynb` in Jupyter Notebook or Google Colab.
+3. Install the required Python libraries:
+
+   ```bash
+   pip install pandas numpy nltk scikit-learn openpyxl matplotlib
+   ```
+
+4. Ensure the datasets are available in the `data/` directory.
+5. Run the notebook cells sequentially to reproduce the analysis.
+
+**Note:** The notebook's file paths must reference the `data/` directory when running from the repository root.
 
 ## Methodology
 
