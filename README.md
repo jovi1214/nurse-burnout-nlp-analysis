@@ -12,8 +12,27 @@ Developed as part of graduate coursework at the University of Colorado Boulder, 
 
 - Analyze sentiment in nurse burnout discussions.
 - Identify recurring topics and language patterns.
-- Compare automated outputs with qualitative interpretations.
-- Evaluate the reliability and limitations of NLP methods when applied to healthcare-related discussions.
+- Explore how workload, staffing, and workplace conditions are represented in online discussions.
+- Compare automated NLP outputs with qualitative interpretations.
+- Evaluate the reliability and limitations of NLP methods applied to healthcare-related discussions.
+
+## Data Sources
+
+The project draws on three types of sources:
+
+**1. Reddit — Qualitative Text Data**
+
+Discussions from r/NurseBurnout and r/nursing provide examples of firsthand experiences related to workplace stress, emotional exhaustion, and burnout.
+
+**2. Kaggle — Structured Reference Data**
+
+The [Burnout in Nurses dataset](https://www.kaggle.com/datasets/shauryapal/burnout-in-nurses/data) provides structured burnout-related indicators to contextualize patterns identified in textual discussions.
+
+**3. Statista — Healthcare Workforce Context**
+
+Published statistics on nurse burnout provide broader context for interpreting the significance of workplace stress and burnout.
+
+These sources serve different analytical purposes and should not be treated as interchangeable datasets.
 
 ## Tools & Technologies
 
@@ -21,30 +40,39 @@ Developed as part of graduate coursework at the University of Colorado Boulder, 
 - **Pandas:** Data manipulation and preprocessing
 - **NLTK / VADER:** Sentiment analysis
 - **Scikit-learn:** Latent Dirichlet Allocation (LDA) topic modeling
-- **Jupyter Notebook / Google Colab:** Development and documentation
+- **Jupyter Notebook / Google Colab:** Development, execution, and documentation
 
 ## Methodology
 
-The analysis involved preparing textual datasets, applying sentiment classification techniques, and using LDA topic modeling to explore recurring themes.
+**1. Data Preparation**
 
-Model outputs were examined alongside qualitative interpretations to identify potential discrepancies and limitations, particularly where sentiment classification could overlook context or nuance.
+Prepared structured and unstructured data for analysis, including text cleaning and preprocessing.
+
+**2. Sentiment Analysis**
+
+Applied NLP-based sentiment classification to examine emotional tone in discussions related to nurse burnout.
+
+**3. Topic Modeling**
+
+Used LDA topic modeling to explore recurring language patterns and potential themes within the text.
+
+**4. Qualitative Evaluation**
+
+Examined automated outputs alongside contextual interpretations, paying particular attention to cases where sentiment classification might overlook nuance or emotional complexity.
+
+## Analytical Observations
+
+The project examined the usefulness and limitations of sentiment analysis and topic modeling for understanding nurse burnout.
+
+Important considerations included:
+
+- Sentiment scores alone may not adequately represent complex workplace experiences.
+- Topic modeling requires human interpretation to establish meaningful connections between recurring terms and workplace conditions.
+- Healthcare-related discussions can contain mixed emotions, contextual language, and experiences that automated methods may misinterpret.
+- Small or nonrepresentative samples limit the generalizability of analytical results.
+
+These observations emphasize the importance of combining automated analysis with domain knowledge and qualitative evaluation.
 
 ## Limitations
 
-Automated NLP methods cannot always capture sarcasm, contextual meaning, or the complexity of healthcare workers' experiences. Dataset size, representativeness, and differences in source material may also affect the reliability and generalizability of findings.
-
-The analysis is exploratory and should not be interpreted as a clinical assessment of burnout.
-
-## Repository Contents
-
-- **nurse_burnout_nlp_analysis.ipynb:** Python notebook containing the analysis and visualizations.
-- **docs/:** Supporting research proposal and presentation materials.
-- **README.md:** Project overview and technical documentation.
-
-## Project Information
-
-**Author:** Johana Villanueva  
-**Institution:** University of Colorado Boulder  
-**Program:** M.S. Business Analytics — Healthcare Analytics
-
-This project reflects an interest in applying data science and AI methods to healthcare research while critically evaluating the accuracy, reliability, and practical implications of analytical outputs.
+- Online discussions may not represent the broader nursing workforce.
