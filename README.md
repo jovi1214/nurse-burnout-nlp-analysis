@@ -111,6 +111,10 @@ Comparing automated outputs with qualitative interpretations revealed several li
 - Small, manually curated datasets limit the generalizability of findings.
 - Combining structured indicators with unstructured discussions can provide complementary perspectives, although the datasets were analyzed separately.
 
+## Limitations
+
+- Online discussions may not represent the broader nursing workforce.
+
 ## Conclusion
 
 This project demonstrates how Python-based NLP techniques can support exploratory healthcare workforce research.
@@ -118,7 +122,3 @@ This project demonstrates how Python-based NLP techniques can support explorator
 The analysis identified recurring themes related to burnout, patient care, professional strain, and potential career departure. It also demonstrated the importance of evaluating automated classifications against contextual interpretations.
 
 The findings support the use of NLP as a complementary analytical tool rather than a substitute for qualitative assessment or validated measures of nurse burnout.
-
-## Limitations
-
-- Online discussions may not represent the broader nursing workforce.
